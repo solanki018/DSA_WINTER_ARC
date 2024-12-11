@@ -1,12 +1,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-//second pattern is 
-//*
-//** 
-//***
 int pattern2(int N){
-   for (int i = 0; i < N-1; i++)
+   for (int i = 0; i < N; i++)
     {
         for (int j =0; j<N-i-1; j++)
         {
@@ -22,10 +18,6 @@ int pattern2(int N){
         {
             cout <<" ";
         }
-        
-        // As soon as the stars for each iteration are printed, we move to the
-        // next row and give a line break otherwise all stars
-        // would get printed in 1 line.
         cout << endl;
     }
     for (int i = N-1; i >= 0; i--)
@@ -44,10 +36,6 @@ int pattern2(int N){
         {
             cout <<" ";
         }
-        
-        // As soon as the stars for each iteration are printed, we move to the
-        // next row and give a line break otherwise all stars
-        // would get printed in 1 line.
         cout << endl;
     }
 }
